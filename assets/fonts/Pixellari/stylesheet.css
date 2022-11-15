@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pixellari';
+    src: url('Pixellari.woff2') format('woff2'),
+        url('Pixellari.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
