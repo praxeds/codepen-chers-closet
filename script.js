@@ -8,6 +8,10 @@ const popUp = document.getElementById('popUp')
 let currentTop = topCarousel[3]
 let currentBottom = bottomCarousel[3]
 
+const clickSound = new Audio('assets/audio/lclick-13694.mp3')
+const wrongSound = new Audio('assets/audio/mixkit-wrong-long-buzzer-954.wav')
+const correctSound = new Audio('assets/audio/mixkit-winning-chimes-2015.wav')
+
 
 for (const btnDiv of carouselBtnDiv) {
     btnDiv.addEventListener('click', function (e) {
@@ -24,6 +28,8 @@ for (const btnDiv of carouselBtnDiv) {
                 prevImg(bottomCarousel)
             }
         }
+        clickSound.play()
+        clickSound.currentTime = 0
     })
 }
 
@@ -31,9 +37,13 @@ dressMeBtn.addEventListener('click', function (e) {
     if (currentTop.classList[0] === currentBottom.classList[0]) {
         popUpDiv.classList.toggle('noDisplay')
         popUp.innerText = "IT'S A MATCH!"
+        correctSound.play()
+        correctSound.currentTime = 0
     } else {
         popUpDiv.classList.toggle('noDisplay')
         popUp.innerText = "MIS-MATCH!"
+        wrongSound.play()
+        wrongSound.currentTime = 0
     }
     setTimeout(closePopUp,1000)
 })
