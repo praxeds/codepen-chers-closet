@@ -27,7 +27,7 @@
 
 Juliana Praxedes - contact@julianapraxedes.com
 
-Project Link: [https://praxeds.github.io/codepen-chers-closet/index.html](https://praxeds.github.io/codepen-chers-closet)
+Project Link: [https://praxeds.github.io/codepen-chers-closet](https://praxeds.github.io/codepen-chers-closet)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
