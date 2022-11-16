@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Pixellari";
+    src: url("assets/fonts/Pixellari/Pixellari.woff2") format("woff2"),
+        url("assets/fonts/Pixellari/Pixellari.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("assets/images/overlay.jpg");
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 3;
+}
+
+#popUp,
+#popUpShadow {
+    padding-top: 2.5vw;
+    position: absolute;
+    width: 73vw;
+    height: 10vw;
+    left: 50%;
+    top: 50%;
+}
+
+#popUp {
+    background-color: white;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11vw;
+    outline: 0.5vmin solid black;
+    z-index: 2;
+}
+
+#popUpShadow {
+    background-color: black;
+    transform: translate(-48%, -40%);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Pixellari";
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+footer {
+    height: 3%;
+    background: black;
+    display: flex;
+    align-items: center;
+    padding: 2.5vmin;
+}
+
+main {
+    flex: 1;
+    background: palevioletred;
+}
+
+nav>ul,
+footer>ul {
+    width: 100%;
+    color: white;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li {
+    width: 33.33%;
+    text-shadow: -0.2vw -0.1vw gray;
+}
+
+nav>ul>li:nth-of-type(2) {
+    text-align: center;
+}
+
+main>div {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/leopardPattern.png");
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#clothesDiv {
+    height: 100%;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselBtnDiv {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+#topCarousel,
+#bottomCarousel {
+    flex: 1;
+    width: 96%;
+    background: white;
+}
+
+.carouselContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.noDisplay {
+    display: none;
+}
+
+
+/*!Button Styles*/
+.smallBtn,
+.bigBtn,
+.carouselBtn {
+    cursor: pointer;
+}
+
+.smallBtn:focus,
+.smallBtn:hover,
+.bigBtn,
+.bigBtn:active,
+.carouselBtn,
+.carouselBtn:active {
+    color: black;
+}
+
+
+.smallBtn:focus,
+.smallBtn:hover,
+.bigBtn:active,
+.carouselBtn:active {
+    background: #3330c9;
+}
+
+.smallBtn:focus,
+.smallBtn:hover,
+.bigBtn:active,
+.carouselBtn:active {
+    text-shadow: -0.2vw -0.1vw gray;
+    border-bottom-color: #000;
+    border-left-color: #a6b3ff;
+    border-right-color: #000;
+    border-top-color: #a6b3ff;
+}
+
+#topCarousel,
+#bottomCarousel,
+.carouselBtn {
+    border-bottom: 0.7vw inset #000;
+    border-left: 0.7vw inset #f1ebff;
+    border-right: 0.7vw inset #000;
+    border-top: 0.7vw inset #f1ebff;
+}
+
+.smallBtn {
+    width: auto;
+    padding: 0.4vw;
+    color: white;
+    background: #202020;
+    border-bottom: 0.4vw inset #000;
+    border-left: 0.4vw inset #9f9fa2;
+    border-right: 0.4vw inset #000;
+    border-top: 0.4vw inset #9f9fa2;
+    box-sizing: border-box;
+    display: inline;
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+.bigBtn {
+    background: #91919d;
+    border-bottom: 1.3vw inset #000;
+    border-left: 1.3vw inset #f1ebff;
+    border-right: 1.3vw inset #000;
+    border-top: 1.3vw inset #f1ebff;
+    font-size: 3.5vw;
+    padding: 2vw 0.8vw;
+    padding-top: 3vw;
+    align-self: end;
+}
+
+.carouselBtn {
+    background: #91919d;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselBtn:nth-of-type(odd) {
+    flex: 2;
+}
+
+.carouselBtn:nth-of-type(even) {
+    flex: 1.5;
+}
