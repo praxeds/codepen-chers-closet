@@ -9,7 +9,7 @@
   <h3 align="center">Ugh, as if! | "Clueless" Cher's Wardrobe</h3>
 
   <p align="center">
-    A simple implementation of grade-school classic “rock paper scissors”. Part of The Odin Project's JavaScript curriculum.
+     Remake of Cher's closet scene from the 1995 movie Clueless. Part of Codepen's November 2022 weekly challenges.
     <br />
     <br />
     <a href="https://praxeds.github.io/codepen-chers-closet/index.html">Live Demo</a>
